@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Berkana Games</title>
+  <meta name="description" content="Berkana Games — cozy games, growing slowly.">
+  <meta name="theme-color" content="#f6f1e7">
+  <style>
+    :root {
+      --bg: #f6f1e7;
+      --text: #3b3a30;
+      --muted: #6f6b5c;
+      --accent: #5f8a4e;
+      --accent-dark: #4a6f3c;
+      --button-text: #ffffff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #23261f;
+        --text: #ece6d6;
+        --muted: #b3ac98;
+        --accent: #7fae6a;
+        --accent-dark: #93c17d;
+        --button-text: #1b1d18;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      text-align: center;
+    }
+
+    main {
+      max-width: 420px;
+      width: 100%;
+    }
+
+    .mascot {
+      width: 96px;
+      height: auto;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 9vw, 2.75rem);
+      letter-spacing: -0.02em;
+    }
+
+    .tagline {
+      margin: 0 0 32px;
+      font-size: 1.125rem;
+      color: var(--muted);
+    }
+
+    .play-button {
+      display: inline-block;
+      width: 100%;
+      max-width: 280px;
+      padding: 16px 24px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: var(--button-text);
+      font-size: 1.125rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .play-button:hover,
+    .play-button:focus-visible {
+      background: var(--accent-dark);
+    }
+
+    .play-button:active {
+      transform: scale(0.97);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- Betula, the studio mascot: a small birch tree -->
+    <svg class="mascot" viewBox="0 0 96 120" aria-hidden="true">
+      <ellipse cx="48" cy="44" rx="34" ry="38" fill="#9cc47f"/>
+      <ellipse cx="34" cy="36" rx="14" ry="12" fill="#b5d69a"/>
+      <rect x="42" y="66" width="12" height="44" rx="4" fill="#f4f0e6" stroke="#3b3a30" stroke-width="2"/>
+      <path d="M44 78h5M47 88h5M44 98h4" stroke="#3b3a30" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="40" cy="48" r="3" fill="#3b3a30"/>
+      <circle cx="56" cy="48" r="3" fill="#3b3a30"/>
+      <path d="M43 56q5 5 10 0" fill="none" stroke="#3b3a30" stroke-width="2.5" stroke-linecap="round"/>
+      <ellipse cx="48" cy="112" rx="26" ry="5" fill="#000" opacity="0.08"/>
+    </svg>
+
+    <h1>Berkana Games</h1>
+    <p class="tagline">Cozy games, growing slowly</p>
+    <a class="play-button" href="/betula/">Play Betula Care</a>
+  </main>
+</body>
+</html>
