@@ -50,10 +50,13 @@
       width: 100%;
     }
 
-    .mascot {
-      width: 96px;
+    .logo {
+      display: block;
+      width: 100%;
       height: auto;
-      margin-bottom: 16px;
+      margin-bottom: 24px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
     }
 
     h1 {
@@ -94,17 +97,7 @@
 </head>
 <body>
   <main>
-    <!-- Betula, the studio mascot: a small birch tree -->
-    <svg class="mascot" viewBox="0 0 96 120" aria-hidden="true">
-      <ellipse cx="48" cy="44" rx="34" ry="38" fill="#9cc47f"/>
-      <ellipse cx="34" cy="36" rx="14" ry="12" fill="#b5d69a"/>
-      <rect x="42" y="66" width="12" height="44" rx="4" fill="#f4f0e6" stroke="#3b3a30" stroke-width="2"/>
-      <path d="M44 78h5M47 88h5M44 98h4" stroke="#3b3a30" stroke-width="2" stroke-linecap="round"/>
-      <circle cx="40" cy="48" r="3" fill="#3b3a30"/>
-      <circle cx="56" cy="48" r="3" fill="#3b3a30"/>
-      <path d="M43 56q5 5 10 0" fill="none" stroke="#3b3a30" stroke-width="2.5" stroke-linecap="round"/>
-      <ellipse cx="48" cy="112" rx="26" ry="5" fill="#000" opacity="0.08"/>
-    </svg>
+    <img class="logo" src="images/logo.jpg" width="800" height="446" alt="Berkana Games logo: a birch tree shaped like the Berkana rune">
 
     <h1>Berkana Games</h1>
     <p class="tagline">Cozy games, growing slowly</p>
