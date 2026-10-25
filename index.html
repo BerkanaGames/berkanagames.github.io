@@ -36,6 +36,7 @@
       min-height: 100vh;
       min-height: 100dvh;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       padding: 24px 16px;
@@ -93,6 +94,19 @@
     .play-button:active {
       transform: scale(0.97);
     }
+
+    /* Small, quiet links to the legal pages */
+    .site-footer {
+      margin-top: 40px;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
+    .site-footer a {
+      display: inline-block;
+      padding: 8px 4px;
+      color: var(--muted);
+    }
   </style>
 </head>
 <body>
@@ -103,5 +117,11 @@
     <p class="tagline">Cozy games, growing slowly</p>
     <a class="play-button" href="/betula-grows/">Play Betula Grows</a>
   </main>
+
+  <footer class="site-footer">
+    <a href="/impressum">Legal Notice (Impressum)</a>
+    ·
+    <a href="/privacy">Privacy</a>
+  </footer>
 </body>
 </html>
